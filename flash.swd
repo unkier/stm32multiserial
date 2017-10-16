@@ -1,0 +1,1 @@
+/opt/SEGGER/JLink/JLinkExe -CommanderScript jlink.swd
