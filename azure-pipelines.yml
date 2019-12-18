@@ -11,5 +11,6 @@ pool:
 
 steps:
 - script: |
+    sudo apt-get install gcc-arm-none-eabi
     make
   displayName: 'make'
