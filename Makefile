@@ -155,6 +155,9 @@ ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
 endif
 
+ifdef SERIALNUM
+C_DEFS += -DCUSTOM_SERIALNUMBER=\"$(SERIALNUM)\"
+endif
 
 # Generate dependency information
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"
