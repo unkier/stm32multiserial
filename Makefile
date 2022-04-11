@@ -6,6 +6,7 @@
 # Generic Makefile (based on gcc)
 #
 # ChangeLog :
+#	2022-04-06 - Add ld-script for STM32F10x
 #	2017-02-10 - Several enhancements + project update mode
 #   2015-07-22 - first version
 # ------------------------------------------------
@@ -167,7 +168,7 @@ CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"
 # LDFLAGS
 #######################################
 # link script
-LDSCRIPT = STM32F103C8Tx_FLASH.ld
+LDSCRIPT = STM32F103CxTx_FLASH.ld
 
 # libraries
 LIBS = -lc -lm -lnosys
